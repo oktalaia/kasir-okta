@@ -34,7 +34,7 @@
                 <th>Diubah pada</th>
                 <th colspan="2">Aksi</th>
             </tr>
-            <?php $i =; ?>
+            <?php $i = 1; ?>
             <?php while ($user = mysqli_fetch_array($query)) : ?>
                 <tr>
                     <td><?= $i ?></td>
@@ -56,6 +56,7 @@
                     </td>
                 </tr>
                 <?php $i++; ?>
+                <?php endwhile ?>
         </table>
     </div>
     <script>
